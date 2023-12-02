@@ -35,6 +35,6 @@ func main() {
 		return result
 	}()
 
-	fmt.Printf("day1 part1: %d\n", part1)
-	fmt.Printf("day1 part2: %d\n", part2)
+	fmt.Printf("day2 part1: %d\n", part1)
+	fmt.Printf("day2 part2: %d\n", part2)
 }
