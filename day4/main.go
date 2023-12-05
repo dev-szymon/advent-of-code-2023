@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+
 	part1 := func() int {
 		f, err := os.Open("./input.txt")
 		if err != nil {
@@ -16,7 +17,7 @@ func main() {
 
 		result, err := solvePartOne(f)
 		if err != nil {
-			log.Fatalf("day3: error solving part1: %+v\n", err)
+			log.Fatalf("day4: error solving part1: %+v\n", err)
 		}
 		return result
 	}()
@@ -24,7 +25,7 @@ func main() {
 	part2 := func() int {
 		f, err := os.Open("./input.txt")
 		if err != nil {
-			log.Fatalf("day3: error opening input file: %+v\n", err)
+			log.Fatalf("day4: error opening input file: %+v\n", err)
 		}
 		defer f.Close()
 
@@ -35,6 +36,6 @@ func main() {
 		return result
 	}()
 
-	fmt.Printf("day3: part1: %d\n", part1)
-	fmt.Printf("day3: part2: %d\n", part2)
+	fmt.Printf("day4: part1: %d\n", part1)
+	fmt.Printf("day4: part2: %d\n", part2)
 }
