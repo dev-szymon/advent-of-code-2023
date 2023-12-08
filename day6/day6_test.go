@@ -42,15 +42,15 @@ func TestSolvePartOne(t *testing.T) {
 
 	f, err := os.Open("./input_test.txt")
 	if err != nil {
-		t.Fatalf("day5: part1: could not open input test file: %+v\n", err)
+		t.Fatalf("day6: part1: could not open input test file: %+v\n", err)
 	}
 
 	result, err := solvePartOne(f)
 	if err != nil {
-		t.Fatalf("day5: part1: error solivng part one: %+v\n", err)
+		t.Fatalf("day6: part1: error solivng part one: %+v\n", err)
 	}
 	if result != expected {
-		t.Errorf("day5: part1: want: %d, got: %d\n", expected, result)
+		t.Errorf("day6: part1: want: %d, got: %d\n", expected, result)
 	}
 }
 
@@ -59,14 +59,14 @@ func TestSolvePartTwo(t *testing.T) {
 
 	f, err := os.Open("./input_test.txt")
 	if err != nil {
-		t.Fatalf("day5: part2: error opening input test file: %+v\n", err)
+		t.Fatalf("day6: part2: error opening input test file: %+v\n", err)
 	}
 
 	result, err := solvePartTwo(f)
 	if err != nil {
-		t.Fatalf("day5: part2: error solivng part one: %+v\n", err)
+		t.Fatalf("day6: part2: error solivng part one: %+v\n", err)
 	}
 	if result != expected {
-		t.Errorf("day5: part2: want: %d, got: %d\n", expected, result)
+		t.Errorf("day6: part2: want: %d, got: %d\n", expected, result)
 	}
 }
